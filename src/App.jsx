@@ -128,7 +128,7 @@ const App = () => {
     const username = result.value;
     setPlayerName(username);
 
-    const newSocket = io("https://tic-tac-toe-using-socket-io-backend.onrender.com", {
+    const newSocket = io(import.meta.env.BACKEND, {
       autoConnect: true,
     });
 
